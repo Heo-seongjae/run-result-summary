@@ -1,0 +1,180 @@
+{
+  "schema_version": "ue5-field-chain.label-blind.v1",
+  "question": "With connector labels and connector coordinates hidden from inference, can the binary stencils (node gate in observation_gate) be associated by epipolar geometry and reconstructed as exact 3D supports using the PnP-recovered poses?",
+  "algorithm_digest": "9e7cd7245dfaf755096e2d8d8b6c150e8a70838847a94e2b20824d00bf4245c2",
+  "reassociation_algorithm_digest": "4879cd453384d78b7132a5221c633f354b4539ba6138b34d0119a7981776397a",
+  "observation_count_by_route": {
+    "R1": 43,
+    "R2": 41,
+    "R3": 44,
+    "R4": 35,
+    "R5": 31,
+    "R6": 34,
+    "R7": 24,
+    "R8": 44,
+    "R9": 34,
+    "R10": 34
+  },
+  "frame_complete_band_rule": null,
+  "observation_gate": {
+    "area_px": 8,
+    "node_gate": false,
+    "rule": "no node gate (Simulation 57 rule): every full blob >= 8 px is a node; blobs touching the image border are dropped",
+    "gated_out_by_route": {
+      "R1": {
+        "competitor_only_below_79_px": 0,
+        "dropped_touching_border": 1
+      },
+      "R2": {
+        "competitor_only_below_79_px": 0,
+        "dropped_touching_border": 1
+      },
+      "R3": {
+        "competitor_only_below_79_px": 0,
+        "dropped_touching_border": 0
+      },
+      "R4": {
+        "competitor_only_below_79_px": 0,
+        "dropped_touching_border": 0
+      },
+      "R5": {
+        "competitor_only_below_79_px": 0,
+        "dropped_touching_border": 1
+      },
+      "R6": {
+        "competitor_only_below_79_px": 0,
+        "dropped_touching_border": 0
+      },
+      "R7": {
+        "competitor_only_below_79_px": 0,
+        "dropped_touching_border": 0
+      },
+      "R8": {
+        "competitor_only_below_79_px": 0,
+        "dropped_touching_border": 1
+      },
+      "R9": {
+        "competitor_only_below_79_px": 0,
+        "dropped_touching_border": 0
+      },
+      "R10": {
+        "competitor_only_below_79_px": 0,
+        "dropped_touching_border": 0
+      }
+    }
+  },
+  "pnp_pose_error": {
+    "capture_deviation_position_mean_m": 0.0,
+    "capture_deviation_rotation_mean_deg": 0.0,
+    "position_median_mm": 18.966191501718225,
+    "position_max_mm": 33.35124131054473,
+    "rotation_median_deg": 0.046892695574850415,
+    "rotation_max_deg": 0.3490153002477634
+  },
+  "endpoints": {
+    "observation_node_count": 364,
+    "accepted_edge_count": 395,
+    "accepted_correct_edge_count": 357,
+    "accepted_false_edge_count": 38,
+    "connected_component_count": 69,
+    "algorithm_output_track_count": 50,
+    "algorithm_valid_region_count": 47,
+    "pure_valid_region_count": 47,
+    "pure_valid_truth_inside_region_count": 47,
+    "connector_with_any_pure_valid_region_count": 44,
+    "connector_with_truth_inside_pure_region_count": 44,
+    "impure_valid_region_count": 0,
+    "no_algorithm_valid_region": false,
+    "no_pure_valid_region": false,
+    "no_truth_inside_pure_region": false,
+    "complete_correct_component_count": 33,
+    "pure_fragment_component_count": 14,
+    "mixed_component_count": 3,
+    "view_conflict_component_count": 7,
+    "singleton_component_count": 12,
+    "oracle_correct_graph_connector_count": 62,
+    "strict_complete_track_count": 33,
+    "strict_valid_region_count": 33,
+    "strict_truth_inside_count": 33,
+    "all_84_strict_tracks": false,
+    "all_84_strict_regions_valid": false,
+    "all_84_strict_truth_inside": false,
+    "strict_diameter_median_mm": 77.10504202617676,
+    "strict_diameter_max_mm": 118.45581713393314,
+    "objective_mm": null,
+    "strict_top_centre_error_median_mm": 5.751481105177643,
+    "strict_top_centre_error_max_mm": 16.26342414118792,
+    "strict_truth_to_support_distance_max_mm": 0.0,
+    "discard_contract": "Absent unique edges remain absent; disconnected components are never joined. Only complete pure tracks count in strict GT evaluation."
+  },
+  "spatial_reassociation": {
+    "input_track_count": 69,
+    "eligible_region_count": 47,
+    "ineligible_track_count": 22,
+    "eligible_pair_count": 1081,
+    "skipped_same_view_pair_count": 658,
+    "skipped_disjoint_aabb_pair_count": 420,
+    "pair_boolean_attempt_count": 3,
+    "exact_overlap_edge_count": 3,
+    "joint_boolean_attempt_count": 0,
+    "accepted_merge_group_count": 3,
+    "ambiguous_overlap_group_count": 0,
+    "boolean_error_count": 0,
+    "final_cluster_count": 44,
+    "final_pure_cluster_count": 44,
+    "final_mixed_cluster_count": 0,
+    "final_unique_pure_connector_count": 44,
+    "final_truth_inside_connector_count": 44,
+    "final_complete_track_count": 36,
+    "accepted_correct_merge_count": 3,
+    "accepted_false_merge_count": 0,
+    "top_centre_error_mm": {
+      "min": 1.5594728127639919,
+      "median": 6.913331756527258,
+      "p95": 15.854580250061975,
+      "max": 16.26342414118792
+    },
+    "diameter_mm": {
+      "min": 52.34548147803964,
+      "median": 78.0290042296926,
+      "p95": 125.01634646500627,
+      "max": 213.24940461727232
+    }
+  },
+  "pure_valid_region_top_centre_error_mm": {
+    "min": 0.3201026651791578,
+    "median": 6.939919949494482,
+    "p95": 16.20500344496565,
+    "max": 55.287892061456105
+  },
+  "pure_valid_region_diameter_mm": {
+    "min": 56.38748407310337,
+    "median": 80.37189731559984,
+    "p95": 203.80640847566283,
+    "max": 382.69841305343965
+  },
+  "evaluation_boundary": {
+    "algorithm_output_written_before_truth_loaded": true,
+    "connector_truth_role": "post-hoc evaluator only",
+    "evaluator_mapping": "project each authoritative top centre with the renderer's actual pose; read which binary connected component contains that pixel",
+    "observed_component_count": 364,
+    "each_observed_component_has_exactly_one_gt": true
+  },
+  "interpretation_limits": [
+    "UE synthetic field-protocol rehearsal, not a physical field validation.",
+    "UE ground-truth binary stencil, not a learned segmentation output.",
+    "The global bridge workspace bounds are used for finite 3D supports.",
+    "Connector IDs and connector BIM/survey coordinates are excluded from matching and reconstruction.",
+    "Any-pure-region connector coverage is not the same endpoint as a complete all-view track."
+  ],
+  "files": {
+    "algorithm_output": "3_results/field_chain_algorithm_output.json",
+    "evaluated_tracks": "3_results/field_chain_tracks.csv",
+    "evaluated_connectors": "3_results/field_chain_connectors.csv",
+    "evaluated_pairs": "3_results/field_chain_pairs.csv",
+    "reassociation_algorithm_output": "3_results/field_chain_reassociation_algorithm_output.json",
+    "reassociated_clusters": "3_results/field_chain_reassociated_clusters.csv",
+    "report": "1_python simulation/analysis/field_chain_label_blind_report_ko.html",
+    "interactive_3d_viewer": "1_python simulation/analysis/target_frame_region_3d.html"
+  }
+}
