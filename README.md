@@ -36,6 +36,7 @@
 
 | 경로 | 내용 |
 |---|---|
+| `.agents/skills/run-result-summary/` | 결과 파일 하나 → 랩미팅 요약표 5줄 스킬 |
 | `examples/run64/<결과 폴더>/field_chain_summary.json` | Run64 실행의 결과 파일 4개 |
 
 ## 5. 한계
