@@ -29,7 +29,7 @@ description: >-
 | 짝 (간선) | 받아들임 N · 틀림 M | `endpoints.accepted_edge_count`, `endpoints.accepted_false_edge_count` |
 | 찾은 연결재 | N/84 (섞인 영역 M) | `spatial_reassociation.final_unique_pure_connector_count`, `spatial_reassociation.final_mixed_cluster_count` |
 | 상면 중심 오차 (mm) | 최소 – 최대 (중앙 X) | `spatial_reassociation.top_centre_error_mm` |
-| 카메라 위치 오차 (mm) | 최소 – 최대 (중앙 X) | `pnp_pose_error.position_median_mm`, `pnp_pose_error.position_max_mm` |
+| 카메라 위치 오차 (mm) | 중앙 X · 최대 Y | `pnp_pose_error.position_median_mm`, `pnp_pose_error.position_max_mm` (최소는 이 파일에 없음) |
 
 한 줄 요약: 표의 결과만 한 문장으로.
 
